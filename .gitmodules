@@ -1,0 +1,4 @@
+[submodule "b_madrid_belajar_git"]
+    path = b_madrid_belajar_git
+    # Baris 'url' mungkin hilang, salah, atau terhapus
+    url = https://github.com/dzikriyadi/revou-madrid-dzikriyadi/tree/master/b_madrid_belajar_git
