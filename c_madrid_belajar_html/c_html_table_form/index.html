@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            padding: 10px;
+            border: #333 1px dashed;
+            color: #333;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 50%;
+            margin: 20px auto;
+            border: #333 1px dashed;
+            padding-top: 40px;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Form Pendaftaran</title>
+</head>
+
+<body>
+    <header>
+        <h1>Form Pendaftaran</h1>
+    </header>
+    <main>
+        <form action="" method="post">
+            <section>
+
+                <fieldset>
+                    <legend><strong>Personal Information</strong></legend>
+                    <label for="fullname">Fullname</label><br>
+                    <input type="text" id="input-fullname" name="fullname" placeholder="Nama Anda" required><br><br>
+                    <label for="email">email</label><br>
+                    <input type="email" id="input-email" name="email" placeholder="Email Anda" required><br><br>
+                    <label for="username">Username</label><br>
+                    <input type="text" id="input-username" name="username" placeholder="Username Anda" required><br><br>
+
+                    <label for="password">Password</label><br>
+                    <input type="password" id="input-password" name="password" placeholder="Password Anda"
+                        required><br><br>
+
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" id="input-dob" name="dob"><br><br>
+
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="input-male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="input-female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+
+
+                </fieldset>
+
+            </section>
+
+
+            <section>
+
+                <fieldset>
+                    <legend><strong>Academic Information</strong></legend>
+                    <label for="major">Major</label><br>
+                    <select name="gender" id="input-gender">
+                        <option value="SoftwareEngineer">Software Engineering</option>
+                        <option value="DigitalMarketing">Digital Marketing</option>
+                        <option value="DataAnalytics">Data Analytics</option>
+                    </select><br><br>
+
+                    <label for="password">Languange</label><br>
+                    <input type="checkbox" id="input-english" name="language" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" id="input-indonesia" name="language" value="indonesia">
+                    <label for="indonesia">Indonesia</label><br>
+                    <input type="checkbox" id="input-jawa" name="language" value="jawa">
+                    <label for="jawa">Jawa</label><br><br>
+
+
+                </fieldset>
+
+            </section>
+
+            <section>
+
+                <fieldset>
+                    <legend><strong>Additional Information</strong></legend>
+                    <label for="additional_info">Motivation</label><br>
+                    <textarea name="additional_info" id="input_additional_info" cols="30" rows="10"
+                        placeholder="Tambahkan informasi tambahan di sini..."></textarea><br><br>
+                </fieldset>
+
+            </section>
+            <section>
+                <br>
+                <button type="reset">Reset Form</button>
+                <button type="submit">Submit Form</button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Form Pendaftaran</p>
+    </footer>
+</body>
+
+</html>
