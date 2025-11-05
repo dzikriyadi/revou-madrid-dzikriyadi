@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+description {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-align: center;
+}
+description p {
+  text-align: center;
+}
+main {
+  padding: 40px 10px;
+  margin: auto;
+  width: 900px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section .description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.team-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.team-intro {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.team-member {
+  border: 1px dashed #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  width: 30%;
+  position: relative;
+}
+
+.fa {
+  font-size: 20px !important;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+}
+
+.team-member h3,
+.team-member p {
+  text-align: center;
+}
+
+button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button a {
+  color: #333;
+  text-decoration: none;
+}
+button:hover {
+  background-color: #cccccc;
+  color: #333;
+}
+
+form button {
+  background-color: #333;
+}
+
+form .reset {
+  background-color: #933434;
+}
+form button:hover {
+  background-color: #555;
+  color: #ffffff;
+}
+#internal-section-nav {
+  text-decoration: none;
+  text-align: center;
+  margin: 30px 0 50px 0;
+}
+#internal-section-nav a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+}
+#personal-intro {
+  margin: 50px 0;
+}
+.personal-description {
+  line-height: 1.6;
+  text-align: center;
+}
+#skills table {
+  width: 600px;
+  margin: auto;
+}
+
+#featured-projects ul {
+  text-align: left;
+  list-style-type: disc;
+  margin: 50px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0 10px;
+}
+
+footer span {
+  margin: 0 10px;
+}
+
+footer span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.page-sections {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-sections a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+form .text-box {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+form p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
