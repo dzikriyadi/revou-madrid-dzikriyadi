@@ -76,7 +76,7 @@ main {
 
 #head {
   padding: 30px;
-  border-bottom: 1px solid black;
+  box-shadow: 0 8px 16px -4px rgb(0 0 0 / 10%);
   margin-bottom: 30px;
   position: fixed;
   width: 100%;
