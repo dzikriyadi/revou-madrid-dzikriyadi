@@ -9,113 +9,147 @@
     <title>Latihan CSS</title>
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <header id="head">
-        <div class="navigation flex">
-            <h1><a href="#">Css Journey</a></h1>
-            <nav class=" text-right">
-                <a href="#home">Home</a> |
-                <a href="#about">About</a> |
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="flex">
-            <section class="main-article">
+    <div class="">
+        <header id="head" class="header">
+            <div class="navigation flex">
+                <a href="#" class="logo">Css Journey</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-                <div class="head-article">
-                    <h1 class="sub-title">Featured Lessons</h1>
-                    <article class=" box-article ">
-                        <img src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
-                            alt="image-head">
+                <ul class="flex menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </header>
+        <main>
+            <div class="flex">
+                <section class="main-article">
+                    <div class="head-article">
+                        <h1 class="sub-title">Featured Lessons</h1>
+                        <article class=" box-article ">
+                            <img src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+                                alt="image-head">
+                            <div class="content-text">
+                                <h2>CSS Box Model</h2>
+                                <p>
+                                    The CSS Box Model is the most fundamental concept that every web developer must
+                                    master.
+                                    This
+                                    concept explains how every
+                                    HTML element (such as
+                                    div, p, or img) is rendered by the browser as a rectangular box that influences the
+                                    layout,
+                                    size, and spacing of elements on a web page.
+                                </p>
+                                <p>
+                                    Mastering the CSS Box Model, particularly understanding the difference between
+                                    content-box
+                                    and border-box, is
+                                    key to building accurate, flexible, and responsive web layouts.
+                                </p>
+
+                                <a href="#">Read Full Article</a>
+                            </div>
+                        </article>
+                    </div>
+                    <h2 class="sub-title">Latest Lessons</h2>
+                    <article class="latest-article box-article flex flex-article">
+                        <img src="https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc"
+                            alt="image-latest-article">
                         <div class="content-text">
-                            <h2>CSS Box Model</h2>
-                            <p>
-                                The CSS Box Model is the most fundamental concept that every web developer must master.
-                                This
-                                concept explains how every
-                                HTML element (such as
-                                div, p, or img) is rendered by the browser as a rectangular box that influences the
-                                layout,
-                                size, and spacing of elements on a web page.
+                            <h2>CSS Flex</h2>
+                            <p>CSS Flex is a one-dimensional layout method used to arrange items within a container,
+                                providing an efficient way to
+                                distribute space and align content even when the size of the items is unknown or
+                                dynamic.
                             </p>
-                            <p>
-                                Mastering the CSS Box Model, particularly understanding the difference between
-                                content-box
-                                and border-box, is
-                                key to building accurate, flexible, and responsive web layouts.
-                            </p>
-
                             <a href="#">Read Full Article</a>
                         </div>
                     </article>
-                </div>
-                <h2 class="sub-title">Latest Lessons</h2>
-                <article class="latest-article box-article flex flex-article">
-                    <img src="https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc"
-                        alt="image-latest-article">
-                    <div class="content-text">
-                        <h2>CSS Flex</h2>
-                        <p>CSS Flex is a one-dimensional layout method used to arrange items within a container,
-                            providing an efficient way to
-                            distribute space and align content even when the size of the items is unknown or dynamic.
-                        </p>
-                        <a href="#">Read Full Article</a>
-                    </div>
-                </article>
-                <article class="latest-article box-article flex flex-article">
-                    <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
-                        alt="image-latest-article">
-                    <div class="content-text">
-                        <h2>CSS Grid</h2>
-                        <p>CSS Grid is a two-dimensional layout system designed for arranging content in rows and
-                            columns simultaneously, making it
-                            ideal for creating complex, page-level layouts with precise control over the positioning and
-                            sizing of elements.
-                        </p>
-                        <a href="#">Read Full Article</a>
-                    </div>
-                </article>
-            </section>
-            <section class="sidebar">
-                <aside>
-                    <div class="box-article">
-                        <h3 class="side-title">Categories</h3>
-                        <p><a href="#"><i class="fa fa-code"></i> HTML</a></p>
-                        <p><a href="#"><i class="fa fa-css3"></i> CSS</a></p>
-                        <p><a href="#"><i class="fa fa-file-code-o"></i> Javascript</a></p>
-                    </div>
-                    <div class="box-article profile">
-                        <h3 class="side-title">About the Author</h3>
-                        <div class="flex flex-article sub-profile">
-                            <img src="https://fastly.picsum.photos/id/177/2515/1830.jpg?hmac=G8-2Q3-YPB2TreOK-4ofcmS-z5F6chIA0GHYAe5yzDY"
-                                alt="image-latest-article">
-                            <figure>
-                                <h4>Dzikriyadi</h4>
-                                <p><i>Software Engineer</i></p>
-                            </figure>
+                    <article class="latest-article box-article flex flex-article">
+                        <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
+                            alt="image-latest-article">
+                        <div class="content-text">
+                            <h2>CSS Grid</h2>
+                            <p>CSS Grid is a two-dimensional layout system designed for arranging content in rows and
+                                columns simultaneously, making it
+                                ideal for creating complex, page-level layouts with precise control over the positioning
+                                and
+                                sizing of elements.
+                            </p>
+                            <a href="#">Read Full Article</a>
                         </div>
-                        <p class="profil-desc">
-                            This website is my process of learning to become a full-stack software engineer.
-                            All css exercises are here
-                        </p>
-                        <a href="#"><i class="fa fa-github"></i></a>
-                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </div>
-                </aside>
-            </section>
-        </div>
+                    </article>
+                </section>
+                <section class="sidebar">
+                    <aside>
+                        <div class="box-article">
+                            <h3 class="side-title">Categories</h3>
+                            <p><a href="#"><i class="fa fa-code"></i> HTML</a></p>
+                            <p><a href="#"><i class="fa fa-css3"></i> CSS</a></p>
+                            <p><a href="#"><i class="fa fa-file-code-o"></i> Javascript</a></p>
+                        </div>
+                        <div class="box-article profile">
+                            <h3 class="side-title">About the Author</h3>
+                            <div class="flex flex-article sub-profile">
+                                <img src="https://fastly.picsum.photos/id/177/2515/1830.jpg?hmac=G8-2Q3-YPB2TreOK-4ofcmS-z5F6chIA0GHYAe5yzDY"
+                                    alt="image-latest-article">
+                                <figure>
+                                    <h4>Dzikriyadi</h4>
+                                    <p><i>Software Engineer</i></p>
+                                </figure>
+                            </div>
+                            <p class="profil-desc">
+                                This website is my process of learning to become a full-stack software engineer.
+                                All css exercises are here
+                            </p>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+        </main>
 
-    </main>
-    <footer>
-        <!-- footer akan tampil disini -->
-    </footer>
+        <footer>
+            <section class="footer">
+                <div class="footer-item ">
+                    <h2 class="side-title">Css Journey</h2>
+                    <p>This website is my process of learning to become a full-stack software engineer.
+                        All css exercises are here</p>
+                </div>
+
+                <div class="footer-item ">
+                    <h3 class="side-title">Quick Link</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item ">
+                    <h3 class="side-title">Know More</h3>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+
+
+            </section>
+            <p class="copyright">© 2025 Dzikiyd's CSS Journey</p>
+        </footer>
+    </div>
 </body>
 
 </html>
